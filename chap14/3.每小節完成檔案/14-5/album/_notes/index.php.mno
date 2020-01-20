@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs_album" value="name:ID;datatype:int,name:LocalName;datatype:string,name:ServName;datatype:string,name:ThumbName;datatype:string,name:FileSize;datatype:int,name:FileType;datatype:string,name:Comment;datatype:string" />
+</info>

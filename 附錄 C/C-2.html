@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>移動滑鼠游標時就顯示最新的X,Y座標</title>
+ <script type="text/JavaScript">
+   function ShowPosition()
+   {
+     document.getElementById('X_pos').value=event.clientX;
+     document.getElementById('Y_pos').value=event.clientY;
+   } 
+ </script> 
+</head>
+<body onMouseMove="ShowPosition();">
+  <label for="X_pos"> X 座標</label>
+  <input type="text" name="X_pos" id="X_pos">
+  <label for="Y_pos"> Y 座標</label>    
+  <input type="text" name="Y_pos" id="Y_pos">
+</body>
+</html>

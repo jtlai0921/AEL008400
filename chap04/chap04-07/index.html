@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表單的練習</title>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+姓名
+  <input name="name" type="text" id="name" size="10" />
+  <br />
+  性別<label>
+      <input type="radio" name="gender" value="male" id="gender_0" />
+      男</label>
+  <label>
+    <input type="radio" name="gender" value="female" id="gender_1" />
+  女</label>
+  <br />
+  年齡
+  <input name="age" type="password" id="age" size="4" />
+  <br />
+  Email<span id="Email">
+  <input type="text" name="text1" id="text1" />
+  <span class="textfieldInvalidFormatMsg">格式無效。</span></span>
+  <p>
+    教育程度
+    <select name="education" size="3" id="education">
+      <option value="1">高中</option>
+      <option value="2">大學</option>
+      <option value="3">研究所</option>
+    </select>
+    <br />
+    <br />
+  最常購買的電腦書籍種類:<br />
+  <input name="programming" type="checkbox" id="programming" value="1" checked="checked" />
+  程式設計
+  <input name="webpage" type="checkbox" id="webpage" value="1" />
+網頁設計 
+<input type="checkbox" name="painting" id="painting" />
+繪圖軟體
+<input name="office" type="checkbox" id="office" value="1" />
+  Office</p>
+  <p>    平常休閒活動(可複選)<br />
+    <select name="hobbies" size="5" multiple="multiple" id="hobbies">
+      <option>踏青</option>
+      <option>逛街</option>
+      <option>閱讀</option>
+      <option>自行車</option>
+      <option>登山</option>
+      <option>文藝展覽</option>
+    </select>
+    <label for="radio"></label>
+  </p>
+  <p>讀者的話<br />
+    <textarea name="readercomment" id="readercomment" cols="30" rows="5"></textarea>
+  </p>
+  <p>
+    <label></label>
+    <input type="reset" name="reset" id="reset" value="重設" />
+    <input type="submit" name="submit" id="submit" value="送出" />
+    <br />
+</p>
+</form>
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("Email", "email", {validateOn:["blur"], isRequired:false});
+//-->
+</script>
+</body>
+</html>
